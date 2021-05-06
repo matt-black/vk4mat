@@ -36,9 +36,9 @@ function [ img ] = vk4_readVk4ImageType (vk4_file, image_type)
     end
     
     % grab binary & hex data
-    bin_data = keyence_readVk4Binary (vk4_file); 
+    bin_data = vk4_readVk4Binary (vk4_file); 
     % compute offsets
-    [offsets, bases] = keyence_computeVk4Offsets (bin_data);
+    [offsets, bases] = vk4_computeVk4Offsets (bin_data);
     
     % whether or not its an "optical" image affects read location
     is_optical = or (strcmp (image_type, 'o'), ...
@@ -75,7 +75,7 @@ function [ img ] = vk4_readVk4ImageType (vk4_file, image_type)
         % I don't know what's going on or why exactly, but we know optical
         % images always have base 24 b/c they're 8-bit RGB, so we'll just
         % add in this special case to catch this error
-        if coding_base == 0 & is_optical
+        if coding_base == 0 && is_optical
             convFn = @(A) uint8 (A);
         else
             error ('keyence_readVk4ImageType :: unknown coding base (%d)', ...

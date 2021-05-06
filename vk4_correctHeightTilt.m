@@ -5,18 +5,18 @@ function [ H_corr ] = vk4_correctHeightTilt ( hgtImg, method )
         ext = lower (ext(2:end));
         switch ext
           case 'vk4'                  % read in height image
-            hgtImg = keyence_readImageType (hgtImg, 'h');
+            hgtImg = vk4_readImageType (hgtImg, 'h');
           case 'tif'
-            hgtImg = keyence_readTiff (hgtImg);
+            hgtImg = vk4_readTiff (hgtImg);
           case 'tiff'
-            hgtImg = keyence_readTiff (hgtImg);
+            hgtImg = vk4_readTiff (hgtImg);
           otherwise 
-            error ('keyence_correctHeightTilt :: Unknown file type %s', ext)
+            error ('vk4_correctHeightTilt :: Unknown file type %s', ext)
         end
     end
     hgtImg = double (hgtImg); 
     % make sure we have a numeric array to work with
-    assert (isnumeric (hgtImg), ['keyence_correctHeightTilt :: hgtImg isnt' ...
+    assert (isnumeric (hgtImg), ['vk4_correctHeightTilt :: hgtImg isnt' ...
                         ' a numeric']);
     method = lower (method);
     switch method
@@ -25,7 +25,7 @@ function [ H_corr ] = vk4_correctHeightTilt ( hgtImg, method )
       case 'linfitedge'
         H_corr = correctHeightTiltByEdgeLine (hgtImg);
       otherwise
-        error ('keyence_correctHeightTilt :: unknown method %s', method)
+        error ('vk4_correctHeightTilt :: unknown method %s', method)
     end
 end
 
