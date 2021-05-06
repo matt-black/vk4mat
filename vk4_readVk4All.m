@@ -1,5 +1,5 @@
-function [ varargout ] = key_readVk4All (vk4_file, gamma_power)
-%KEYENCE_READVK4ALL read all images in a Vk4 file
+function [ varargout ] = vk4_readVk4All (vk4_file, gamma_power)
+%VK4_READVK4ALL read all images in a Vk4 file
 %
 % PARAMETERS
 %   vk4_file : file path or fileID

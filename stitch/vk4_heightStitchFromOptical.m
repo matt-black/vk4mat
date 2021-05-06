@@ -1,5 +1,5 @@
-function [ hgt ] = key_heightStitchFromOptical ( optStitch, hgtFolder, refCfg, tarCfg )
-%KEYENCE_HEIGHTSTITCHFROMOPTICAL constuct a stitch of the height images from
+function [ hgt ] = vk4_heightStitchFromOptical ( optStitch, hgtFolder, refCfg, tarCfg )
+%VK4_HEIGHTSTITCHFROMOPTICAL constuct a stitch of the height images from
 %a pre-stitched optical image
     narginchk (4, 4);
     % get size of image

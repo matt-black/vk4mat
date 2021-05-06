@@ -1,5 +1,5 @@
-function [ H_corr ] = key_correctHeightTilt ( hgtImg, method )
-%KEYENCE_CORRECTHEIGHTTILT corrects tilts in height image
+function [ H_corr ] = vk4_correctHeightTilt ( hgtImg, method )
+%VK4_CORRECTHEIGHTTILT corrects tilts in height image
     if ischar (hgtImg)
         [~, ~, ext] = fileparts (hgtImg);
         ext = lower (ext(2:end));

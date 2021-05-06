@@ -1,5 +1,5 @@
-function [ ok, out_path ] = key_saveTiff ( img, out_path )
-%KEYENCE_SAVETIFF save the image array as a Tiff file
+function [ ok, out_path ] = vk4_saveTiff ( img, out_path )
+%VK4_SAVETIFF save the image array as a Tiff file
 % this takes care of making sure the Tiff is properly formatted and that the
 % data is encoded into the TIF losslessly from the 
     img_type = class (img);

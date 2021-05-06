@@ -1,5 +1,5 @@
-function [ stitch ] = key_heightBlender (stitch, new_img, stitch_view)
-% KEYENCE_HEIGHTBLENDER blends `new_img` into the stitch by remapping the
+function [ stitch ] = vk4_heightBlender (stitch, new_img, stitch_view)
+% VK4_HEIGHTBLENDER blends `new_img` into the stitch by remapping the
 % image values into `new_img` so that they match those in the overlapping
 % regions of the existing stitch
 % 

@@ -1,6 +1,6 @@
-function [ stitch ] = key_heightStitchFromTransformList ( imgs, tforms, ...
+function [ stitch ] = vk4_heightStitchFromTransformList ( imgs, tforms, ...
                                                       verbose)
-% KEYENCE_HEIGHTSTITCHFROMTRANSFORMLIST stitch the images 
+% VK4_HEIGHTSTITCHFROMTRANSFORMLIST stitch the images 
     
     narginchk (2, 3);
     if nargin < 3, verbose = false; end

@@ -1,5 +1,5 @@
-function [ img ] = key_readVk4ImageType (vk4_file, image_type)
-%KEYENCE_READVK4IMAGETYPE read an image from a vk4 file
+function [ img ] = vk4_readVk4ImageType (vk4_file, image_type)
+%VK4_READVK4IMAGETYPE read an image from a vk4 file
 %
 % PARAMETERS
 %   vk4_file : file path or fileID 

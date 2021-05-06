@@ -1,5 +1,5 @@
-function [ binary_data ] = key_readVk4Binary (vk4_file)
-%KEYENCE_READVK4 read data from a *.VK4 file
+function [ binary_data ] = vk4_readVk4Binary (vk4_file)
+%VK4_READVK4 read data from a *.VK4 file
 %
 % PARAMETERS:
 %   fpath : path to VK4 file or 

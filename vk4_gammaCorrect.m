@@ -1,5 +1,5 @@
-function [ y ] = key_gammaCorrect (x, power)
-%KEYENCE_GAMMACORRECT
+function [ y ] = vk4_gammaCorrect (x, power)
+%VK4_GAMMACORRECT
     narginchk (1, 2)
     if nargin < 2, power = 0.45; end    % default gamma power
     

@@ -1,5 +1,5 @@
-function [ offsets, bases ] = key_computeVk4Offsets (bin_data)
-%KEYENCE_COMPUTEVK4Offsets compute offsets for where to read data from
+function [ offsets, bases ] = vk4_computeVk4Offsets (bin_data)
+%VK4_COMPUTEVK4OFFSETS compute offsets for where to read data from
 % 
 % PARAMETERS
 %   bin_data : 

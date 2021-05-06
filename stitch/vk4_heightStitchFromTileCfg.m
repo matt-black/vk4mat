@@ -1,6 +1,6 @@
-function [ stitch ] = key_heightStitchFromTileCfg ( ...
+function [ stitch ] = vk4_heightStitchFromTileCfg ( ...
     imgFolder, refCfg, tarCfg, dtype_out, verbose )
-%KEYENCE_HEIGHTSTITCHFROMTILECFG 
+%VK4_HEIGHTSTITCHFROMTILECFG 
     narginchk (3, 5);
     if nargin < 5, verbose = false; end % be loud?
     

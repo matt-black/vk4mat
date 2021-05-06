@@ -1,5 +1,5 @@
-function [ fnames, tforms, refCoords ] = key_affineTransformBetweenTileCfgs ( refCfg, tarCfg, rel_to_first )
-%KEYENCE_AFFINETRANSFORMBETWEENTILECFGS compute affine transform between all
+function [ fnames, tforms, refCoords ] = vk4_affineTransformBetweenTileCfgs ( refCfg, tarCfg, rel_to_first )
+%VK4_AFFINETRANSFORMBETWEENTILECFGS compute affine transform between all
 %the tiles in the reference & target configurations
 %
 % All transforms are assumed purely translational
